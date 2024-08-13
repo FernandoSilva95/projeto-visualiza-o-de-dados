@@ -10,7 +10,7 @@ Implementar um sistema web para visualização de dados utilizando uma bibliotec
 
 # Implementação da tabela no banco de Dados
 
-Foi definido pela equipe que os dados do PIB do Brasil seriam utilizados para o projeto, desde a conversão da moeda para o real até os dias atuais. O website do IBGE permitiu realizar o download de uma tabela do Excel que foi posteriormente importada na conexão com o banco de dados. 
+Definido que os dados do PIB do Brasil serão utilizados para o projeto, desde a conversão da moeda para o real até os dias atuais. O website do IBGE permitiu realizar o download de uma tabela do Excel que foi posteriormente importada na conexão com o banco de dados. 
 
 A conexão escolhida foi do tipo SQLite, que permitiu o compartilhamento do arquivo entre a equipe. A tabela do Banco de Dados ainda precisou de manipulação, com a retirada dos pontos contidos entre os números maiores (exemplo 8.967.236) com o objetivo de facilitar a leitura dos dados pelo gráfico criado no FrontEnd. O comando utilizado para realizar a alteração descrita se deu por: UPDATE data_basepib set PIB_Anual = REPLACE(PIB_Anual, '.', '')
 
